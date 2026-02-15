@@ -8,81 +8,47 @@
 <body>
   <header>
     <h1>About Me</h1>
-    <p>Background, interests, and skills in progress</p>
-
     <nav aria-label="Primary">
       <ul>
-        <li>
-          <a href="index.html" title="Go to the homepage">Home</a>
-        </li>
-        <li>
-          <a href="about.html"
-             title="Learn more about my background and skills"
-             aria-current="page">About</a>
-        </li>
-        <li>
-          <a href="projects.html"
-             title="View my academic and personal projects">Projects</a>
-        </li>
-        <li>
-          <a href="cooking.html"
-             title="Read about my interest in cooking">Cooking</a>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <article>
-      <section>
-        <h2>Background</h2>
-        <p>
-          I am a senior studying Information Communication Technology. I’m especially interested in cybersecurity,
-          and I want to keep improving both my technical skills and my ability to explain technical topics clearly.
-        </p>
-        <p>
-          I’m working toward a career in Cybersecurity Sales Engineering because it combines technology, communication,
-          and real-world problem solving.
-        </p>
-      </section>
+    <section aria-labelledby="summary">
+      <h2 id="summary">Quick summary</h2>
+      <p>My name is Vy Nguyen, and I’m studying Information Communication Technology. I’m interested in how people use technology in real settings and how we can design systems that are clear, accessible, and secure.</p>
+      <p>Right now, I’m building a multi-page website using semantic HTML. The point of this version is not flashy features, but writing content that has a purpose and organizing it with headings and meaningful page sections.</p>
+    </section>
 
-      <section>
-        <h2>Skills I’m Building</h2>
-        <ul>
-          <li>Semantic HTML and accessible structure</li>
-          <li>Git and GitHub (commits, repositories, GitHub Pages)</li>
-          <li>Networking and security fundamentals</li>
-          <li>Professional communication and documentation</li>
-        </ul>
-      </section>
+    <section aria-labelledby="interests">
+      <h2 id="interests">Interests</h2>
 
-      <section>
-        <h2>Values</h2>
-        <blockquote>
-          <p>
-            Clear structure helps people find information quickly. Good technology supports real humans with real goals.
-          </p>
-        </blockquote>
-        <p>
-          In my coursework, I’m learning how organization, usability, and accessibility affect whether a website is
-          actually usable for different people.
-        </p>
-      </section>
-    </article>
+      <article aria-labelledby="web">
+        <h3 id="web">Web structure and accessibility</h3>
+        <p>I like the idea that a website should still “work” when it’s read by a screen reader or viewed without styling. Semantic HTML supports that by giving each part of the page a job and a name.</p>
+      </article>
 
-    <aside>
-      <h2>Next Steps</h2>
-      <ol>
-        <li>Add more detailed project descriptions on the Projects page</li>
-        <li>Expand this About page with coursework highlights</li>
-        <li>Keep commits small and meaningful as the site grows</li>
-      </ol>
-    </aside>
+      <article aria-labelledby="security">
+        <h3 id="security">Security mindset</h3>
+        <p>I’m also interested in cybersecurity topics like account protection, MFA, and safer online habits. Security often fails when interfaces are confusing, so clear structure and communication matter.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="plans">
+      <h2 id="plans">Plans after graduation</h2>
+      <p>After I graduate, I plan to move to Dallas, Texas and pursue a career in cybersecurity sales engineering. I’m drawn to work that combines technical understanding with communication and problem-solving.</p>
+      <p>This website will grow over time into something closer to a personal portfolio, with links to class projects and short write-ups explaining what I built and what I learned.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Vy Nguyen</p>
+    <p><a href="index.html">Back to Home</a></p>
   </footer>
 </body>
 </html>
+
 
