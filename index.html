@@ -8,78 +8,42 @@
 <body>
   <header>
     <h1>Vy Nguyen</h1>
-    <p>Senior in Information Communication Technology | Interested in Cybersecurity</p>
+    <p>Information Communication Technology student building a simple, semantic website.</p>
 
     <nav aria-label="Primary">
       <ul>
-        <li>
-          <a href="index.html"
-             title="Go to the homepage"
-             aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="about.html"
-             title="Learn more about my background and skills">About</a>
-        </li>
-        <li>
-          <a href="projects.html"
-             title="View my academic and personal projects">Projects</a>
-        </li>
-        <li>
-          <a href="cooking.html"
-             title="Read about my interest in cooking">Cooking</a>
-        </li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <article>
-      <h2>Welcome</h2>
-      <p>
-        This website is a small, multi-page HTML5 project focused on structure and meaning.
-        It introduces who I am, what I’m studying, and what I’m working toward professionally.
-      </p>
+    <section aria-labelledby="welcome">
+      <h2 id="welcome">Welcome</h2>
+      <p>This site is a small, three-page project focused on writing meaningful content and structuring it with semantic HTML. I’m keeping the design intentionally plain for now so the structure is easy to read and validate.</p>
+      <p>My goal is to practice building pages that make sense even without styling. If you skim the headings, you should still understand the purpose of each page and how the information is organized.</p>
+    </section>
 
-      <section>
-        <h3>Career Goal</h3>
-        <p>
-          After graduation, I plan to move to Dallas, Texas and pursue a career in Cybersecurity
-          Sales Engineering. I’m interested in roles that combine technical knowledge with strong
-          communication skills.
-        </p>
-      </section>
+    <section aria-labelledby="focus">
+      <h2 id="focus">What I’m focusing on</h2>
 
-      <section>
-        <h3>Explore the Site</h3>
-        <ul>
-          <li>
-            <a href="about.html" title="Background, education, and skills">
-              About
-            </a> – Learn more about my background and interests
-          </li>
-          <li>
-            <a href="projects.html" title="Coursework and project highlights">
-              Projects
-            </a> – See examples of what I’m working on
-          </li>
-          <li>
-            <a href="cooking.html" title="Personal hobby and creative outlet">
-              Cooking
-            </a> – Read about one of my favorite hobbies
-          </li>
-        </ul>
-      </section>
-    </article>
+      <article aria-labelledby="semantic-html">
+        <h3 id="semantic-html">Semantic HTML and clear structure</h3>
+        <p>I’m using elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code> because they communicate meaning to browsers, assistive technologies, and other developers. This makes the site easier to maintain and more accessible.</p>
+      </article>
 
-    <aside>
-      <h2>Current Focus</h2>
-      <ul>
-        <li>Semantic HTML and accessibility</li>
-        <li>GitHub and version control workflow</li>
-        <li>Cybersecurity and networking fundamentals</li>
-      </ul>
-    </aside>
+      <article aria-labelledby="content">
+        <h3 id="content">Real content first</h3>
+        <p>Instead of filler text, each page has short paragraphs that explain who I am, what I’m learning, and how I’m planning my next steps after graduation. Later, when we add CSS, the pages will already have a strong foundation.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="next">
+      <h2 id="next">Next steps</h2>
+      <p>In future updates, I plan to add styling, improve navigation patterns, and expand the “Resources” page into a small portfolio. I also want to add a simple contact workflow, but since forms won’t submit on GitHub Pages, I’ll describe that idea in writing instead of building it for this task.</p>
+    </section>
   </main>
 
   <footer>
@@ -87,6 +51,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
