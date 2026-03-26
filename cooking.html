@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+ 
   <header>
     <h1>Cooking</h1>
     <p>A personal interest and creative outlet</p>
 
-   <nav aria-label="Primary">
+    
+    <nav>
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="index.html" class="current">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resources.html">Resources</a></li>
@@ -23,62 +26,43 @@
     </nav>
   </header>
 
+  
   <main>
-    <article>
+    <article class="main-column">
       <section>
         <h2>Why I Enjoy Cooking</h2>
-        <p>
-          Cooking is something I enjoy because it allows me to slow down and be creative while still being productive.
-          It’s a hands-on activity where small decisions can completely change the outcome.
-        </p>
-        <p>
-          I like experimenting with flavors, learning new techniques, and improving through practice, which is similar
-          to how I approach learning technology.
-        </p>
+        <p>Cooking is something I enjoy because it allows me to slow down and be creative while still being productive. Small decisions can completely change the outcome.</p>
+        <p>I like experimenting with flavors, learning new techniques, and improving through practice, which is similar to how I approach learning technology.</p>
       </section>
 
       <section>
-  <h2>Types of Food I Like to Cook</h2>
+        <h2>Types of Food I Like to Cook</h2>
+        <picture>
+          <source srcset="media/pho-800.jpeg" media="(min-width: 600px)">
+          <source srcset="media/pho-350.jpeg" media="(max-width: 599px)">
+          <img src="media/pho-350.jpeg" alt="A bowl of pho that represents my interest in cooking Vietnamese dishes at home.">
+        </picture>
+        <ul>
+          <li>Home-style comfort meals</li>
+          <li>Asian-inspired dishes</li>
+          <li>Simple pasta and rice-based meals</li>
+          <li>Quick meals that fit a busy schedule</li>
+        </ul>
+      </section>
 
-  <picture>
-  <source srcset="media/pho-800.jpeg" media="(min-width: 600px)">
-  <source srcset="media/pho-350.jpeg" media="(max-width: 599px)">
-  <img src="media/pho-350.jpeg"
-       alt="A bowl of pho that represents my interest in cooking Vietnamese dishes at home.">
-</picture>
-
-
-  <ul>
-    <li>Home-style comfort meals</li>
-    <li>Asian-inspired dishes</li>
-    <li>Simple pasta and rice-based meals</li>
-    <li>Quick meals that fit a busy schedule</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Another Dish I Enjoy Making</h2>
-
-  <picture>
-    <source srcset="media/banhxeo-800.jpg" media="(min-width: 350px)">
-    <source srcset="media/banhxeo-350.jpg" media="(max-width: 800px)">
-    <img src="media/banhxeo-350.jpg"
-         alt="A crispy bánh xèo that reflects my interest in cooking Vietnamese dishes with fresh ingredients.">
-  </picture>
-
-  <p>
-    Bánh xèo is one of my favorite dishes to make because it requires timing, attention,
-    and balance between texture and flavor. It’s challenging but rewarding.
-  </p>
-</section>
-
+      <section>
+        <h2>Another Dish I Enjoy Making</h2>
+        <picture>
+          <source srcset="media/banhxeo-800.jpg" media="(min-width: 350px)">
+          <source srcset="media/banhxeo-350.jpg" media="(max-width: 800px)">
+          <img src="media/banhxeo-350.jpg" alt="A crispy bánh xèo that reflects my interest in cooking Vietnamese dishes with fresh ingredients.">
+        </picture>
+        <p>Bánh xèo is one of my favorite dishes to make because it requires timing, attention, and balance between texture and flavor. It’s challenging but rewarding.</p>
+      </section>
 
       <section>
         <h2>Cooking Skills I’m Developing</h2>
-        <p>
-          I’m still learning, but over time I’ve become more confident in the kitchen.
-          Some skills I continue to work on include:
-        </p>
+        <p>I’m still learning, but over time I’ve become more confident in the kitchen. Some skills I continue to work on include:</p>
         <ul>
           <li>Knife safety and efficiency</li>
           <li>Meal planning and prep</li>
@@ -89,26 +73,24 @@
 
       <section>
         <h2>Connection to My Career Goals</h2>
-        <p>
-          Cooking has taught me patience, organization, and problem-solving. If something goes wrong, you troubleshoot,
-          adjust, and try again. Those same skills apply to cybersecurity and technical work.
-        </p>
+        <p>Cooking has taught me patience, organization, and problem-solving. If something goes wrong, you troubleshoot, adjust, and try again. Those same skills apply to cybersecurity and technical work.</p>
       </section>
     </article>
 
-    <aside>
+    
+    <aside class="sidebar-column">
       <h2>Favorite Part</h2>
-      <p>
-        My favorite part of cooking is sharing food with others. It’s rewarding to see people enjoy something you made
-        from scratch.
-      </p>
+      <p>My favorite part of cooking is sharing food with others. It’s rewarding to see people enjoy something you made from scratch.</p>
     </aside>
   </main>
 
+  
   <footer>
     <p>&copy; 2026 Vy Nguyen</p>
   </footer>
+
 </body>
+</html>
 </html>
 
 
