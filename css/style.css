@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 html {
   font-size: 100%;
   font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
@@ -11,6 +12,7 @@ body {
   padding: 0;
 }
 
+/* ===== Typography ===== */
 h1, h2, h3 {
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
   color: #660066;
@@ -47,10 +49,22 @@ p {
   text-align: left;
 }
 
-em { font-style: italic; color: #b30089; }
-strong { font-weight: 700; color: #640090; }
-cite { font-style: italic; color: #7a007e; }
+em {
+  font-style: italic;
+  color: #b30089;
+}
 
+strong {
+  font-weight: 700;
+  color: #640090;
+}
+
+cite {
+  font-style: italic;
+  color: #7a007e;
+}
+
+/* ===== Header ===== */
 #site-header {
   background-color: #800080;
   color: #ffd6f6;
@@ -59,13 +73,15 @@ cite { font-style: italic; color: #7a007e; }
   border-bottom: 3px solid #d98cd9;
 }
 
+/* ===== Navigation ===== */
 nav {
   background-color: #993399;
   padding: 0.5em 0;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+/* Child selector added */
+nav > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -92,22 +108,26 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
+/* ===== Layout (Flexbox) ===== */
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 2rem;
   border: 3px solid #cc66cc;
   background-color: #ffe6f9;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
+/* ===== Sections ===== */
 section {
-  flex: 1 1 300px; /* responsive two-column layout */
+  flex: 1 1 300px;
   padding: 1.5em;
   border: 2px dashed #d18be0;
   border-radius: 6px;
@@ -127,6 +147,7 @@ section:hover {
   font-weight: 600;
 }
 
+/* ===== Images ===== */
 img {
   width: 100%;
   max-width: 600px;
@@ -139,9 +160,10 @@ img {
 
 img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== Box Model Example ===== */
 .outer-box {
   width: 300px;
   border: 3px solid #993399;
@@ -157,6 +179,7 @@ img:hover {
   background-color: #f6b3e6;
 }
 
+/* ===== Footer ===== */
 footer {
   background-color: #660066;
   color: #ffccff;
@@ -176,7 +199,9 @@ footer a:hover {
   color: #ffe6ff;
 }
 
-code, pre {
+/* ===== Code Styling ===== */
+code,
+pre {
   font-family: 'Courier New', Courier, monospace;
   background-color: #f9e6ff;
   padding: 0.2rem 0.4rem;
